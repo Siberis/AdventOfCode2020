@@ -5,9 +5,8 @@ using System.Text.RegularExpressions;
 
 namespace Day5
 {
-    public class Day5
+    public static class Day5
     {
-
         public static int Star1(string rules)
         {
             var row = rules[0..7];
@@ -44,7 +43,7 @@ namespace Day5
                 }
                 width /= 2;
             }
-            return minRow * 8 + minCol;
+            return (minRow * 8) + minCol;
         }
     }
 }

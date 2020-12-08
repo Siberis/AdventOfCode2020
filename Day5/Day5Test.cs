@@ -11,7 +11,7 @@ namespace Day5
     public class Day5Test
     {
         [Fact]
-        public async Task Test1()
+        public void Test1()
         {
             Assert.Equal(357, Day5.Star1("FBFBBFFRLR"));
             Assert.Equal(567, Day5.Star1("BFFFBBFRRR"));
@@ -33,6 +33,5 @@ namespace Day5
             }
             Assert.False(true);
         }
-
     }
 }

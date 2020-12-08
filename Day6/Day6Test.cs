@@ -35,6 +35,5 @@ namespace Day6
             var lines = await ReadUtils.ReadAllLines("./Day6Part1Input.txt").ConfigureAwait(false);
             Assert.Equal(3358, Day6.Star2(lines));
         }
-
     }
 }

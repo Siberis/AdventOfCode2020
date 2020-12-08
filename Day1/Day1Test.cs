@@ -13,7 +13,7 @@ namespace Day1
         [Fact]
         public async Task Test1()
         {
-            var lines = await ReadUtils.ReadAllLines("./Day1Part1.txt");
+            var lines = await ReadUtils.ReadAllLines("./Day1Part1.txt").ConfigureAwait(false);
             var numbers = lines.Select(e => int.Parse(e)).ToArray();
 
             Assert.Equal(514579, Day1.Star1(numbers));
@@ -21,7 +21,7 @@ namespace Day1
         [Fact]
         public async Task Star1()
         {
-            var lines = await ReadUtils.ReadAllLines("./Day1Part1Input.txt");
+            var lines = await ReadUtils.ReadAllLines("./Day1Part1Input.txt").ConfigureAwait(false);
             var numbers = lines.Select(e => int.Parse(e)).ToArray();
 
             Assert.Equal(1020084, Day1.Star1(numbers));
@@ -29,7 +29,7 @@ namespace Day1
         [Fact]
         public async Task Test2()
         {
-            var lines = await ReadUtils.ReadAllLines("./Day1Part1.txt");
+            var lines = await ReadUtils.ReadAllLines("./Day1Part1.txt").ConfigureAwait(false);
             var numbers = lines.Select(e => int.Parse(e)).ToArray();
 
             Assert.Equal(241861950, Day1.Star2(numbers));
@@ -37,7 +37,7 @@ namespace Day1
         [Fact]
         public async Task Star2()
         {
-            var lines = await ReadUtils.ReadAllLines("./Day1Part1Input.txt");
+            var lines = await ReadUtils.ReadAllLines("./Day1Part1Input.txt").ConfigureAwait(false);
             var numbers = lines.Select(e => int.Parse(e)).ToArray();
 
             Assert.Equal(295086480, Day1.Star2(numbers));

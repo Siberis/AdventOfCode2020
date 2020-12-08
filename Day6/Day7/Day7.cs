@@ -6,13 +6,13 @@ using System.Text.RegularExpressions;
 namespace Day7
 {
     public static class Day7
-    {
-        public static int Star1(string[] rules)
+
+    /* Unmerged change from project 'Day7'
+    Before:
         {
-            Dictionary<string, List<(string, int)>> map = Extract(rules);
-            var counter = 0;
-            foreach (var item in map.Keys)
-            {
+    After:
+        {
+    */ */         {
                 if (!item.Equals("shiny gold"))
                 {
                     if (Count(map, item) > 0)
@@ -97,10 +97,8 @@ namespace Day7
                     counter += sum;
                     foreach (var item in map[x.Item1])
                     {
-                        var v = new List<int>(x.Item2)
-                        {
-                            item.Item2
-                        };
+                        var v = new List<int>(x.Item2);
+                        v.Add(item.Item2);
                         queue.Enqueue((item.Item1, v));
                     }
                 }

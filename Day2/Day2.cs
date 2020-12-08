@@ -3,9 +3,8 @@ using System.Linq;
 
 namespace Day2
 {
-    public class Day2
+    public static class Day2
     {
-
         public static int Star1(string[] input)
         {
             var counter = 0;

@@ -5,9 +5,8 @@ using System.Text.RegularExpressions;
 
 namespace Day4
 {
-    public class Day4
+    public static class Day4
     {
-
         public static int Star1(string[] input)
         {
             Dictionary<string, string> fields = new Dictionary<string, string>();
@@ -93,7 +92,6 @@ namespace Day4
         }
         private static bool Validate(Dictionary<string, string> fields)
         {
-
             var ecl = new HashSet<string>{
                 "amb","blu","brn","gry","grn","hzl","oth"
             };

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Utils
 {
-    public class ReadUtils
+    public static class ReadUtils
     {
         public static async Task<string[]> ReadAllLines(string path)
         {

@@ -2,9 +2,8 @@
 
 namespace Day1
 {
-    public class Day1
+    public static class Day1
     {
-
         public static int Star1(int[] input)
         {
             for (int i = 0; i < input.Length; i++)

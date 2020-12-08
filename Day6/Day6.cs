@@ -5,9 +5,8 @@ using System.Text.RegularExpressions;
 
 namespace Day6
 {
-    public class Day6
+    public static class Day6
     {
-
         public static int Star1(string[] rules)
         {
             var counter = 0;
