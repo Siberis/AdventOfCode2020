@@ -34,6 +34,5 @@ namespace Day21
             var lines = await ReadUtils.ReadAllLines("./Day21Part1Input.txt").ConfigureAwait(false);
             Assert.Equal("kllgt,jrnqx,ljvx,zxstb,gnbxs,mhtc,hfdxb,hbfnkq", Day21.Star2(lines));
         }
-        //
     }
 }
